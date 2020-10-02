@@ -1,1 +1,263 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* general styling */
+
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+.hero_header {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 25px;
+    padding: 5% 25%;
+}
+
+.hero_header h1{
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.hero_header h2{
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.hero_header p {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    padding: 2.5% 5%;
+}
+nav {
+    background: #fff;
+    padding: 10px 0;
+  }
+  nav ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+
+  }
+
+  nav ul li a {
+    padding: 5px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #555;
+  }
+.banner{
+    background-color: grey;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    padding:1%;
+}
+.banner h2{
+    font-size: 2.5rem;
+    text-transform:uppercase;
+    color: white;
+}
+.projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 2.5% 0;
+}
+
+.mozy_image{
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+
+}
+.mozy_image:hover + .mozy_copy {
+    display:flex;
+}
+.mozy_copy{
+    display: none;
+    background-color: darkgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+    transition-timing-function: ease-in-out;
+    transition: width 2s, height 2s;
+
+}
+.backcountry_image{
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.backcountry_copy{
+    display: none;
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.spacemonkey_image{
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.spacemonkey_copy{
+    display: none;
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.vivint_image{
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.vivint_copy{
+    display: none;
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.stretch_image{
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.stretch_copy{
+    display: none;
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.lambda_image{
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.lambda_copy{
+    display: none;
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.tribal_image{
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.tribal_copy{
+    display: none;
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.clutch_image{
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.clutch_copy{
+    display: none;
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+
+.colab_image{
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.colab_copy{
+    display: none;
+    background-color: lightgray;
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+}
+.socials {
+    margin:5%;
+}
