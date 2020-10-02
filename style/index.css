@@ -2,7 +2,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,7 +22,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -53,6 +52,7 @@ table {
     font-size: 62.5%;
     line-height: 1.5;
     max-width: 100%;
+    border:1px solid black;
 }
 
 .hero_header {
@@ -84,6 +84,12 @@ table {
     text-align: center;
     line-height: 1.5;
     padding: 2.5% 5%;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav {
     background: #fff;
@@ -126,137 +132,45 @@ nav {
     text-transform:uppercase;
     color: white;
 }
-.projects {
+.project_collection {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 2.5% 0;
 }
-
-.mozy_image{
-    background-color: lightgray;
+.project {
+    background-color: lightgrey;
     width: 20%;
     height: 200px;
-    margin: 10px;
+    margin: 5%;
+    position: relative;
 
 }
-.mozy_image:hover + .mozy_copy {
+.company_image{
+    background-color: lightgray;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.company_image:hover {
+    display:none;
+}
+.company_image:hover + .company_copy {
     display:flex;
+    
 }
-.mozy_copy{
+.company_image:hover {
+    opacity:0.1;
+}
+.company_copy{
     display: none;
-    background-color: darkgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-    transition-timing-function: ease-in-out;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
     transition: width 2s, height 2s;
-
-}
-.backcountry_image{
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.backcountry_copy{
-    display: none;
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.spacemonkey_image{
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.spacemonkey_copy{
-    display: none;
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.vivint_image{
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.vivint_copy{
-    display: none;
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.stretch_image{
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.stretch_copy{
-    display: none;
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.lambda_image{
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.lambda_copy{
-    display: none;
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.tribal_image{
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.tribal_copy{
-    display: none;
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.clutch_image{
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.clutch_copy{
-    display: none;
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-
-.colab_image{
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
-}
-.colab_copy{
-    display: none;
-    background-color: lightgray;
-    width: 20%;
-    height: 200px;
-    margin: 10px;
+    transition-timing-function: ease-in-out;
 }
 .socials {
     margin:5%;
